@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdvantageCardComponent } from '../../components/commons/advantage-card/advantage-card.component';
+import { ImgUrlPipe } from '../../shared/pipes/img-url.pipe';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, AdvantageCardComponent],
+  imports: [CommonModule, ImgUrlPipe, AdvantageCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

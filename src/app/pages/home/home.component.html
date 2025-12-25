@@ -8,7 +8,7 @@
       </h2>
     </div>
     <img
-      src="../../../assets/images/illustration.svg"
+      [src]="'../../../assets/illustration/illustration.svg' | imgUrl"
       alt="ByteBank Illustration"
       width="661"
       height="412"
@@ -20,7 +20,7 @@
     <div class="advantagesGrid">
       @for (vantagem of vantagens; track $index) {
         <app-advantage-card
-          [iconSrc]="vantagem.iconSrc"
+          [iconSrc]="vantagem.iconSrc | imgUrl"
           [title]="vantagem.title"
           [description]="vantagem.description"
         />
